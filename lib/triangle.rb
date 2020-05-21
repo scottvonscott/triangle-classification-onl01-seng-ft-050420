@@ -17,12 +17,10 @@ end
 
 def kind
   triangle = @side_array.uniq.size
-  @side_array.each do |num|
-    num <= 0
+  if @side_array.any?(0)
     raise TriangleError
-  end
 
-  if triangle == 1
+elsif triangle == 1
     :equilateral
   elsif triangle == 2
     :isosceles
