@@ -24,6 +24,7 @@ def kind
     something
 
 end
+end
 
 
 # class TriangleError < StandardError
