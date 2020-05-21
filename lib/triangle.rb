@@ -13,17 +13,12 @@ def initialize (side_a, side_b, side_c)
   @side_array << @side_a
   @side_array << @side_b
   @side_array << @side_c
-  binding.pry
 end
 
 def kind
+  @side_array.uniq.size
+  binding.pry
 
-  if @side_a == @side_b && @side_b == @side_c
-      :equilateral
-    elsif @side_a == @side_b||@side_c && @legth_b == @side_a||@side_c
-      :isosceles
-    elsif @side_a != @side_b && @side_b != @side_c
-      :scalene
     elsif @side_a + @side_b < @side_c || @side_b + @side_c < @side_a
       raise TriangleError
     elsif @side_a * @side_b * @side_c == 0
