@@ -19,12 +19,6 @@ def kind
   @side_array.uniq.size
   binding.pry
 
-    elsif @side_a + @side_b < @side_c || @side_b + @side_c < @side_a
-      raise TriangleError
-    elsif @side_a * @side_b * @side_c == 0
-      raise TriangleError
-    else
-  end
 end
 
 
