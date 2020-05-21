@@ -19,6 +19,7 @@ def kind
   triangle = @side_array.uniq.size
   if @side_array.min <= 0
     raise TriangleError
+  elsif 
   elsif triangle == 1
     :equilateral
   elsif triangle == 2
