@@ -22,10 +22,10 @@ def kind
     raise TriangleError
   elsif triangle == 1
     :equilateral
-  elsif bad_triangle[0] + bad_triangle[1] > bad_triangle[2]
-    raise TriangleError
   elsif triangle == 2
     :isosceles
+  elsif bad_triangle[0] + bad_triangle[1] > bad_triangle[2]
+    raise TriangleError
   elsif triangle == 3
     :scalene
   else
