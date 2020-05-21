@@ -23,7 +23,7 @@ def kind
     :equilateral
   elsif triangle == 2
     if @side_a + @side_b < @side_c || @side_b + @side_c < @side_a
-          raise TriangleError
+       raise TriangleError
     else
     :isosceles
   elsif triangle == 3
