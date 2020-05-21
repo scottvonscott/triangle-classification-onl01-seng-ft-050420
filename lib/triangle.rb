@@ -20,7 +20,7 @@ def kind
   bad_triangle = @side_array.sort
   if @side_array.min <= 0
     raise TriangleError
-  elsif 
+  elsif
   elsif triangle == 1
     :equilateral
   elsif triangle == 2
