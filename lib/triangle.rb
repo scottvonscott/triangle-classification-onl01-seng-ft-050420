@@ -20,7 +20,7 @@ def kind
   @side_array.each do |num|
     num <= 0
     raise TriangleError
-  end 
+  end
   if triangle == 1
     :equilateral
   elsif triangle == 2
