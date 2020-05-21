@@ -30,7 +30,13 @@ def kind
       end
     end
   elsif triangle == 3
-    :scalene
+    @side_array.each do |num|
+      if num * 2 <= @side_array.max
+        raise TriangleError
+      else
+        :scalene
+      end
+    end
   else
     "something"
 end
