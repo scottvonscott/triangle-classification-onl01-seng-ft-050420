@@ -22,6 +22,7 @@ def kind
   elsif triangle == 1
     :equilateral
   elsif triangle == 2
+    binding.pry
     if @side_array.each do |num|
          num * 2 <= @side_array.max
          raise TriangleError
