@@ -23,7 +23,6 @@ def kind
     elsif @side_a * @side_b * @side_c == 0
       raise TriangleError
     else
-
   end
 end
 
