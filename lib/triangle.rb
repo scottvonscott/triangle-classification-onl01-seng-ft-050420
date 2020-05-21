@@ -30,8 +30,11 @@ def kind
     :isosceles
   end
   elsif triangle == 3
+    if bad_triangle[0] + bad_triangle[1] <= bad_triangle[2]
+      raise TriangleError
+    else
     :scalene
-
+  end
   else
     "something"
 end
