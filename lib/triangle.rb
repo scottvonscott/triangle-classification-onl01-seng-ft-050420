@@ -17,12 +17,13 @@ def kind
     elsif @side_a == @side_b||@side_c || @legth_b == @side_a||@side_c
       :isosceles
     elsif @side_a != @side_b && @side_b != @side_c
+      :scalene
     elsif @side_a + @side_b < @side_c || @side_b + @side_c < @side_a
       raise TriangleError
     elsif @side_a * @side_b * @side_c == 0
       raise TriangleError
     else
-      :scalene
+
   end
 end
 
