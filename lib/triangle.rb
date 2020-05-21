@@ -10,7 +10,9 @@ def initialize (side_a, side_b, side_c)
   @side_b = side_b
   @side_c = side_c
   @side_array = []
-  @side_array << @side_a @side_b @side_c
+  @side_array << @side_a
+  @side_array << @side_b
+  @side_array << @side_c
   binding.pry
 end
 
