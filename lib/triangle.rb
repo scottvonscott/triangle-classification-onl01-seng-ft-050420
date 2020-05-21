@@ -21,7 +21,7 @@ def kind
   when triangle == 1
     :equilateral
   else
-    something
+    "something"
 
 end
 end
