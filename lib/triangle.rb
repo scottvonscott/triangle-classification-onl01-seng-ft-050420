@@ -27,7 +27,6 @@ def kind
         raise TriangleError
       else
         :isosceles
-    end
   elsif triangle == 3
     :scalene
   else
