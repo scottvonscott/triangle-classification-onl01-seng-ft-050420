@@ -19,10 +19,12 @@ def kind
   triangle = @side_array.uniq.size
   if @side_array.min <= 0
     raise TriangleError
-
   elsif triangle == 1
     :equilateral
   elsif triangle == 2
+    if @side_a + @side_b < @side_c || @side_b + @side_c < @side_a
+          raise TriangleError
+    else
     :isosceles
   elsif triangle == 3
     :scalene
