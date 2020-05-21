@@ -18,6 +18,7 @@ end
 def kind
   triangle = @side_array.uniq.size
   case triangle
+    binding.pry
   when triangle == 1
     :equilateral
   else
