@@ -24,7 +24,8 @@ def kind
   elsif triangle == 2
     if @side_array.each do |num|
          num * 2 <= @side_array.max
-       raise TriangleError
+         raise TriangleError
+       end
     else
     :isosceles
     end
