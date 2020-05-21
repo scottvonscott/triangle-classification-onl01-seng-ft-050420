@@ -28,6 +28,7 @@ def kind
       else
         :isosceles
       end
+    end
   elsif triangle == 3
     :scalene
   else
