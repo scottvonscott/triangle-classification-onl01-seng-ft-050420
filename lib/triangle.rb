@@ -18,6 +18,7 @@ end
 def kind
   triangle = @side_array.uniq.size
   if @side_array.any?(0)
+    raise TriangleError
   elsif triangle == 1
     :equilateral
   elsif triangle == 2
@@ -28,10 +29,12 @@ def kind
     "something"
 end
 end
+
+
+class TriangleError < StandardError
 end
 
-# class TriangleError < StandardError
-# end
+end
 #
 # end
 # def kind
