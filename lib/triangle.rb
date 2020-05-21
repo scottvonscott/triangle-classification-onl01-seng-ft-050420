@@ -16,10 +16,11 @@ def initialize (side_a, side_b, side_c)
 end
 
 def kind
-  triangle = @side_array.uniq.size
-  case triangle
-  when triangle == 1
+  if @side_array.uniq.size == 1
     :equilateral
+  when triangle == 2
+    :isosceles
+  when triangle == 3
   else
     "something"
 end
