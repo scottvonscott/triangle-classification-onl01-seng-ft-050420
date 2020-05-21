@@ -17,7 +17,8 @@ end
 
 def kind
   triangle = @side_array.uniq.size
-  if triangle == 1
+  if @side_array.any?(0)
+  elsif triangle == 1
     :equilateral
   elsif triangle == 2
     :isosceles
