@@ -16,8 +16,12 @@ def initialize (side_a, side_b, side_c)
 end
 
 def kind
-  @side_array.uniq.size
-  binding.pry
+  triangle = @side_array.uniq.size
+  case triangle
+  when triangle == 1
+    :equilateral
+  else
+    something
 
 end
 
