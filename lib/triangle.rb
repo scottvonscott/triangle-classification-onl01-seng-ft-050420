@@ -22,7 +22,6 @@ def kind
     ":equilateral"
   else
     "something"
-    binding.pry
 end
 end
 end
