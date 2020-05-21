@@ -22,9 +22,9 @@ def kind
   elsif triangle == 1
     :equilateral
   elsif triangle == 2
-   if true @side_array.each do |num|
-         num * 2 <= @side_array.max
-           raise TriangleError
+         @side_array.each do |num|
+           if num * 2 <= @side_array.max
+              raise TriangleError
        end
     else
     :isosceles
