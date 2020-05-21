@@ -21,6 +21,7 @@ def kind
     num <= 0
     raise TriangleError
   end
+
   if triangle == 1
     :equilateral
   elsif triangle == 2
