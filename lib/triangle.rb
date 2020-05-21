@@ -24,10 +24,10 @@ def kind
     :equilateral
   elsif triangle == 2
     :isosceles
-  elsif bad_triangle[0] + bad_triangle[1] > bad_triangle[2]
-    raise TriangleError
   elsif triangle == 3
     :scalene
+  elsif bad_triangle[0] + bad_triangle[1] > bad_triangle[2]
+    raise TriangleError
   else
     "something"
 end
