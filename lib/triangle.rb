@@ -17,6 +17,7 @@ end
 
 def kind
   triangle = @side_array.uniq.size
+  bad_triangle = @side_array.sort
   if @side_array.min <= 0
     raise TriangleError
   elsif 
