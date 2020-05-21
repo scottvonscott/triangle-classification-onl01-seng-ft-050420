@@ -22,7 +22,7 @@ def kind
   elsif triangle == 1
     :equilateral
   elsif triangle == 2
-    if @side_a + @side_b < @side_c || @side_b + @side_c < @side_a
+    if @side_array.min * 2 < @side_array.max
        raise TriangleError
     else
     :isosceles
